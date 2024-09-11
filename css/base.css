@@ -519,4 +519,8 @@ video {
   --tw-contain-layout: ;
   --tw-contain-paint: ;
   --tw-contain-style: ;
+}
+
+img[src="images/netflixLogo.png"] {
+  height: 40px;
 }/*# sourceMappingURL=base.css.map */
