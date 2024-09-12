@@ -6,8 +6,29 @@ body {
     color: colors.$font;
 }
 
+main {
+    margin-top: 12vw;
+}
+
+.text-5xl {
+    font-size: calc(0.2rem + 4vw);
+}
+/*
+.text-2xl {
+    font-size: calc();
+}
+*/
+
 img[src="images/netflixLogo.png"] {height: 40px;}
 
 input {
-    width: 25vw;
+    $buttonWidth: 150px;
+
+    width: calc(200px + $buttonWidth + 10vw);
+    color: colors.$background;
+
+    & + button {
+        width: $buttonWidth;
+        margin-left: calc(-1 * $buttonWidth);
+    }
 }
