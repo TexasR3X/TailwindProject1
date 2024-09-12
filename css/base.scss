@@ -1,7 +1,9 @@
 @use "output";
+@use "colors";
 
-
-
-img[src="images/netflixLogo.png"] {
-    height: 40px;
+body {
+    background: colors.$background;
+    color: colors.$font;
 }
+
+img[src="images/netflixLogo.png"] {height: 40px;}
