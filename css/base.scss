@@ -1,9 +1,15 @@
 @use "output";
 @use "colors";
 
-body {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.imgCover {
     background: colors.$background;
     color: colors.$font;
+    height: 100vh;
 }
 
 main {
@@ -11,20 +17,34 @@ main {
 }
 
 .text-5xl {
-    font-size: calc(0.2rem + 4vw);
+    @media screen and (max-width: 800px) {
+        font-size: 2.2rem;
+        max-width: 90vw;
+        text-align: center;
+    }
+    @media screen and (min-width: 801px) {
+        font-size: calc(0.2rem + 4vw);
+    }
 }
-/*
 .text-2xl {
-    font-size: calc();
+    @media screen and (max-width: 800px) {
+        font-size: 1.1rem;
+        max-width: 90vw;
+        text-align: center;
+    }
+    @media screen and (min-width: 801px) {
+        font-size: calc(0.1rem + 2vw);
+    }
 }
-*/
 
-img[src="images/netflixLogo.png"] {height: 40px;}
+img[src="./images/netflixLogo.png"] {
+    height: 40px;
+}
 
 input {
     $buttonWidth: 150px;
 
-    width: calc(200px + $buttonWidth + 10vw);
+    width: calc(150px + $buttonWidth + 10vw);
     color: colors.$background;
 
     & + button {

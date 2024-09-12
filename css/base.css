@@ -529,6 +529,10 @@ video {
   margin: 1rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -636,6 +640,10 @@ video {
   padding: 1rem;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -688,30 +696,53 @@ video {
   font-weight: 600;
 }
 
-body {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.imgCover {
   background: rgb(46, 46, 46);
   color: rgb(255, 255, 255);
+  height: 100vh;
 }
 
 main {
   margin-top: 12vw;
 }
 
-.text-5xl {
-  font-size: calc(0.2rem + 4vw);
+@media screen and (max-width: 800px) {
+  .text-5xl {
+    font-size: 2.2rem;
+    max-width: 90vw;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 801px) {
+  .text-5xl {
+    font-size: calc(0.2rem + 4vw);
+  }
 }
 
-/*
-.text-2xl {
-    font-size: calc();
+@media screen and (max-width: 800px) {
+  .text-2xl {
+    font-size: 1.1rem;
+    max-width: 90vw;
+    text-align: center;
+  }
 }
-*/
-img[src="images/netflixLogo.png"] {
+@media screen and (min-width: 801px) {
+  .text-2xl {
+    font-size: calc(0.1rem + 2vw);
+  }
+}
+
+img[src="./images/netflixLogo.png"] {
   height: 40px;
 }
 
 input {
-  width: calc(350px + 10vw);
+  width: calc(300px + 10vw);
   color: rgb(46, 46, 46);
 }
 input + button {
