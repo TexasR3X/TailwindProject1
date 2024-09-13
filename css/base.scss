@@ -46,6 +46,7 @@ button, img {
     transition: 0.5s;
 
     &:hover {filter: brightness(1.25);}
+    &.border-white:hover {background: rgba(0, 0, 0, 0.5);}
 }
 
 input {

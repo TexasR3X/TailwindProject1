@@ -677,6 +677,9 @@ button, img {
 button:hover, img:hover {
   filter: brightness(1.25);
 }
+button.border-white:hover, img.border-white:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
 
 input {
   width: calc(300px + 10vw);
