@@ -6,15 +6,18 @@
     padding: 0;
 }
 
+body {
+    background: colors.$background url(./../images/background.jpg) center top;
+    background-image: cover;
+}
+
 div.imgCover {
     background: colors.$background;
-    color: colors.$font;
+    color: colors.$white;
     height: 100vh;
 }
 
-main {
-    margin-top: 12vw;
-}
+main {margin-top: 12vw;}
 
 .text-5xl {
     @media screen and (max-width: 800px) {
@@ -37,15 +40,20 @@ main {
     }
 }
 
-img[src="./images/netflixLogo.png"] {
-    height: 40px;
+img[src="./images/netflixLogo.png"] {height: 40px;}
+
+button, img {
+    transition: 0.5s;
+
+    &:hover {filter: brightness(1.25);}
 }
 
 input {
     $buttonWidth: 150px;
 
     width: calc(150px + $buttonWidth + 10vw);
-    color: colors.$background;
+    color: colors.$black;
+    border: colors.$white;
 
     & + button {
         width: $buttonWidth;
