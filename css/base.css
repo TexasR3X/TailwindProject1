@@ -671,22 +671,22 @@ img[src="./images/netflixLogo.png"] {
   height: 40px;
 }
 
-button, img {
+img, button, input[type=submit] {
   transition: 0.5s;
 }
-button:hover, img:hover {
+img:hover, button:hover, input[type=submit]:hover {
   filter: brightness(1.25);
 }
-button.border-white:hover, img.border-white:hover {
+img.border-white:hover, button.border-white:hover, input[type=submit].border-white:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
-input {
+form input:first-child {
   width: calc(300px + 10vw);
   color: rgb(46, 46, 46);
   border: rgb(255, 255, 255);
 }
-input + button {
+form input:last-child {
   width: 150px;
   margin-left: -150px;
 }/*# sourceMappingURL=base.css.map */

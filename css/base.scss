@@ -42,21 +42,22 @@ main {margin-top: 12vw;}
 
 img[src="./images/netflixLogo.png"] {height: 40px;}
 
-button, img {
+img, button, input[type="submit"] {
     transition: 0.5s;
 
     &:hover {filter: brightness(1.25);}
     &.border-white:hover {background: rgba(0, 0, 0, 0.5);}
 }
 
-input {
+form {
     $buttonWidth: 150px;
 
-    width: calc(150px + $buttonWidth + 10vw);
-    color: colors.$black;
-    border: colors.$white;
-
-    & + button {
+    input:first-child {
+        width: calc(150px + $buttonWidth + 10vw);
+        color: colors.$black;
+        border: colors.$white;
+    }
+    input:last-child {
         width: $buttonWidth;
         margin-left: calc(-1 * $buttonWidth);
     }
